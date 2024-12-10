@@ -84,7 +84,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -333,6 +333,7 @@
 .gallery-item img:hover {
   transform: scale(1.25);
 }
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -576,6 +577,10 @@
 .footer-logo {
   display: block;
   margin-bottom: 3.2rem;
+}
+
+.header-logo {
+  display: block;
 }
 
 .social-icon {
