@@ -136,6 +136,7 @@ in media queries */
   /* for mobile menu */
   .btn-mobile-nav {
     display: block;
+    z-index: 999;
   }
 
   .main-nav {
@@ -181,11 +182,11 @@ in media queries */
     font-size: 3rem;
   }
 
-  .icon-mobile-nav[name="close-outline"] {
+  .nav-open .icon-mobile-nav[name="close-outline"] {
     display: block;
   }
 
-  .icon-mobile-nav[name="menu-outline"] {
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
   }
 }

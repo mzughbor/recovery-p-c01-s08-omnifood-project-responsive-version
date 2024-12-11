@@ -221,10 +221,10 @@ strong {
   color: #0f1604;
   border: 1px solid #adb99a;
 }
-
+/* 
 *:focus {
-  outline: 0.3rem dashed #85c229;
-}
+  outline: 0.02rem dashed #85c229;
+} */
 
 .list {
   list-style: none;
