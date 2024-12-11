@@ -190,16 +190,6 @@ in media queries */
   }
 }
 
-/* 
-
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-*/
-
 /*********************************/
 /* below 704px (Smaller Tablets)     */
 /*********************************/
@@ -236,5 +226,99 @@ in media queries */
   .logo-col,
   .address-col {
     grid-column: span 3;
+  }
+
+  .step-img {
+    width: 45%;
+  }
+}
+/* 
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+/*********************************/
+/* below 544px (Phones)     */
+/*********************************/
+
+@media (max-width: 34em) {
+  .grid {
+    grid-row: 4.8rem;
+  }
+
+  .grid--2cols,
+  .grid--3cols,
+  .grid--4cols {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 4.8rem 0;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.3rem;
+  }
+
+  .section-how {
+    padding: 9.6rem 0;
+  }
+
+  .step-img {
+    width: 33%;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(6.4rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.6rem;
+    padding: 0 1.6rem 1.6rem 1.6rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 36rem;
+    grid-row: 1;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
   }
 }
