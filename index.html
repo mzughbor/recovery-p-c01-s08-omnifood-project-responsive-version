@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OmniFood</title>
+    <meta name="description"
+        content="Omnifood is an Ai powered food subscription that will make you eat healthy again, 365 days per year.">
+    <title>OmniFood &mdash; Home</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,7 +68,13 @@
                     </div>
                 </div>
                 <div class="hero-img-box">
-                    <img class="hero-img" src="img/hero.png" alt="hero-img">
+                    <picture>
+                        <source srcset="img/hero.webp" type="image/webp" />
+                        <source srcset="img/hero-min.png" type="image/png" />
+
+                        <img src="img/hero-min.png" class="hero-img"
+                            alt="Woman enjoying food, meals in storage container, and food bowls on a table" />
+                    </picture>
                 </div>
             </div>
         </section>
@@ -526,7 +537,6 @@
             </div>
         </footer>
     </main>
-
 </body>
 
 </html>
