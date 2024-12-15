@@ -82,3 +82,27 @@ function checkFlexGap() {
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
+
+/* For popup things */
+
+const popup = document.querySelector(".popup-wrapper");
+const close = document.querySelector(".popup-close");
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    popup.style.display = "block";
+    // document.body.style.overflow = "hidden"; // Disable page scrolling // won't work it's actually exist due to menu animation and overflow situation ...
+  }, 2000);
+});
+
+close.addEventListener("click", () => {
+  popup.style.display = "none";
+  // document.body.style.overflow = ""; // enable back page scrolling
+});
+
+popup.addEventListener("click", (e) => {
+  if (e.target.className === "popup-wrapper") {
+    popup.style.display = "none";
+    document.body.style.overflow = "";
+  }
+});

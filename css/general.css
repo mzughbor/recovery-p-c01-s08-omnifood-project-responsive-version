@@ -78,6 +78,10 @@ body {
 /* General reuseable components */
 /*********************************/
 
+.margin-bottom-sm {
+  margin-bottom: 1.6rem !important;
+}
+
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
